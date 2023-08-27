@@ -2,16 +2,15 @@
      /* background added so the spinner can be visible to the user */
     background: rgb(170, 223, 214);
     
-    /* fixed position and top and left assigned to 0 to make the loader class on top of the images */
+    /* Ensures the loader covers the entire viewport */
     position: fixed;
     top: 0;
     left: 0;
-
-    /* setting the width and height to take the whole screen */
     width: 100vw;
     height: 100vh;
     
     /* here the value of opacity property will be changed later using javascript to hide the loader class once the contents are loaded */
+    /* Initial opacity set to fully visible */
     opacity: 1;
 
     /* to center the spinner */
@@ -19,7 +18,7 @@
     justify-content: center;
     align-items: center;
 
-    /* setting transition delay */
+    /* Adding a smooth transition effect for opacity changes */
     transition: opacity 4s;
 }
 
