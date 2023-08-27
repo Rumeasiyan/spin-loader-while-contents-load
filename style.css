@@ -1,0 +1,10 @@
+img {
+    height: 100px;
+    margin: 10px;
+}
+
+.image-stack {
+    display: flex;
+    flex-flow: row wrap;
+}
+

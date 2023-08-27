@@ -1,0 +1,48 @@
+.loader {
+     /* background added so the spinner can be visible to the user */
+    background: rgb(170, 223, 214);
+    
+    /* fixed position and top and left assigned to 0 to make the loader class on top of the images */
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    /* setting the width and height to take the whole screen */
+    width: 100vw;
+    height: 100vh;
+    
+    /* here the value of opacity property will be changed later using javascript to hide the loader class once the contents are loaded */
+    opacity: 1;
+
+    /* to center the spinner */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* setting transition delay */
+    transition: opacity 4s;
+}
+
+
+.spin {    
+    /* spinner designs */
+    width: 80px;
+    height: 80px;
+    border: 10px solid #f7f4f4;
+    border-top: 10px solid #2c3cd1;
+    border-radius: 50%;
+
+    /* spinner animation */
+    animation: spinner-loading 4s ease infinite;
+}
+
+/* spinner animation */
+@keyframes spinner-loading {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+        
+    }
+}
